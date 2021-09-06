@@ -1,0 +1,15 @@
+.clocks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+
+  &__country {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+  }
+}

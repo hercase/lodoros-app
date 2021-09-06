@@ -1,0 +1,30 @@
+:root {
+  --primary: #ff8906;
+  --secondary: #e53170;
+
+  --headline: #fffffe;
+  --text: #a7a9be;
+  --background: #0f0e17;
+}
+
+#root {
+  color: var(--text);
+  background: var(--background);
+  width: 100vw;
+  height: 100vh;
+}
+
+.app {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  color: var(--headline);
+}
