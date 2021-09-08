@@ -1,0 +1,14 @@
+.footer {
+  display: grid;
+  place-items: center;
+  background-color: var(--background-dark);
+
+  &__message {
+    font-variant: all-small-caps;
+    font-size: 0.875rem;
+  }
+
+  .heart {
+    color: #e25555;
+  }
+}

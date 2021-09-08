@@ -1,16 +1,17 @@
 import React from "react";
 import "normalize.css";
 import "./styles.scss";
+
 import Clocks from "./components/Clocks";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="app">
-      <div className="container">
-        <p className="title">Lodoros Time</p>
-        <Clocks />
-        <h2>¿Podemos hablar con Burro?</h2>
-      </div>
+    <div className="app container">
+      <Header />
+      <Clocks />
+      <Footer />
     </div>
   );
 }

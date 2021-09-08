@@ -5,11 +5,16 @@
   justify-content: center;
   flex-wrap: wrap;
   font-size: 1.2rem;
+  padding: 1rem 0;
 
   &__country {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary);
+    color: var(--text);
+  }
+
+  svg {
+    width: 2rem;
   }
 }

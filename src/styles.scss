@@ -1,30 +1,40 @@
-:root {
-  --primary: #ff8906;
-  --secondary: #e53170;
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
 
-  --headline: #fffffe;
-  --text: #a7a9be;
-  --background: #0f0e17;
+:root {
+  --primary: hsl(206, 97%, 61%);
+  --secondary: hsl(349, 84%, 60%);
+  --tertiary: hsl(205, 39%, 69%);
+
+  --headline: hsl(0, 0%, 100%);
+  --text: hsl(70, 80%, 100%);
+
+  --background: hsl(206, 85%, 11%);
+  --background-light: hsl(206, 85%, 15%);
+  --background-dark: hsl(206, 85%, 9%);
 }
 
 #root {
   color: var(--text);
   background: var(--background);
-  width: 100vw;
-  height: 100vh;
 }
 
 .app {
   font-family: "Roboto", sans-serif;
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3.5rem 1fr 3rem;
 }
 
 .container {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--background-light);
 }
 
 .title {
   color: var(--headline);
+  font-size: 2rem;
 }
