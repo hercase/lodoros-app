@@ -7,10 +7,13 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "date-fns": "2.23.0",
     "date-fns-timezone": "0.1.4",
     "date-fns-tz": "1.1.6",
-    "normalize.css": "8.0.1",
+    "framer-motion": "^4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "1.39.0",

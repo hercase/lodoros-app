@@ -8,9 +8,8 @@ const Header = () => {
         Lodoros <span>App</span>
       </div>
       <nav className="navigation">
-        <span className="navigation__item">Clocks </span>
-        <span className="navigation__item">Clocks </span>
-        <span className="navigation__item">Clocks </span>
+        <span className="navigation__item">Links útiles</span>
+        <span className="navigation__item">Clocks</span>
       </nav>
     </div>
   );
