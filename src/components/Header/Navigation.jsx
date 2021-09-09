@@ -13,7 +13,7 @@ const Navigation = () => {
         icon={<HamburgerIcon />}
       />
       <MenuList>
-        <MenuItem> Horarios</MenuItem>
+        <MenuItem>Horarios</MenuItem>
         <MenuItem>Links Útiles</MenuItem>
       </MenuList>
     </Menu>

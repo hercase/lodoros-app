@@ -12,14 +12,14 @@ const Clocks = () => {
 
         <Image
           boxSize="25px"
-          src={window.location.href + "img/argentina.svg"}
+          src={window.location.origin + "/img/argentina.svg"}
           alt="Bandera Argentina"
         />
 
         <Text>{getTimeZoneDate("Europe/Madrid")}</Text>
         <Image
           boxSize="25px"
-          src={window.location.href + "img/spain.svg"}
+          src={window.location.origin + "/img/spain.svg"}
           alt="Bandera Española"
         />
       </HStack>
