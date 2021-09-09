@@ -1,13 +1,17 @@
 import React from "react";
-import "./styles.scss";
+import { Center, Flex, Text } from "@chakra-ui/layout";
 
 const Header = () => {
   return (
-    <footer className="footer">
-      <span className="footer__message">
-        Made with <span className="heart">&#9829;</span> by HerCase
-      </span>
-    </footer>
+    <Center bg="brand.800">
+      <Text as="samp" fontSize="sm">
+        Made with
+        <Text as="span" m={2} color="tomato">
+          &#9829;
+        </Text>
+        by HerCase
+      </Text>
+    </Center>
   );
 };
 

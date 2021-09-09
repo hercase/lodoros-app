@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.6.7",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
@@ -16,7 +17,6 @@
     "framer-motion": "^4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "1.39.0",
     "vite-plugin-react-svg": "^0.2.0"
   },
   "devDependencies": {
