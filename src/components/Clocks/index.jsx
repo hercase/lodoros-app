@@ -1,8 +1,7 @@
 import React from "react";
-import { getTimeZoneDate, isNight } from "../../helpers";
+import { isNight } from "../../helpers";
 import {
   Center,
-  Flex,
   Heading,
   HStack,
   Stack,
@@ -11,14 +10,17 @@ import {
 } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 
+import useRealTime from "../../hooks/useRealTime";
+
 import ArgFlag from "../../assets/argentina.svg";
 import SpainFlag from "../../assets/spain.svg";
 
 const Clocks = () => {
-  const [argStringDate, argDate] = getTimeZoneDate(
+  const [argStringDate, argDate] = useRealTime(
     "America/Argentina/Buenos_Aires"
   );
-  const [spainStringDate, spainDate] = getTimeZoneDate("Europe/Madrid");
+  const [spainStringDate, spainDate] = useRealTime("Europe/Madrid");
+
   const lodorosTime = isNight(argDate) || isNight(spainDate) ? "NO" : "SI";
 
   return (
