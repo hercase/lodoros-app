@@ -9,9 +9,9 @@ import Discord from "./Pages/Discord";
 const MainRoutes = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/times" component={Times} />
-      <Route exact path="/discord" component={Discord} />
+      <Route path="/" component={Times} />
+      {/* <Route exact path="/times" component={Times} /> */}
+      {/* <Route exact path="/discord" component={Discord} /> */}
     </Switch>
   );
 };

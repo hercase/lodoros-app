@@ -18,7 +18,7 @@ const Header = () => {
       <Link to="/">
         <Image htmlWidth="237.5px" src={Logo} alt="logo" />
       </Link>
-      <Navigation />
+      {/* <Navigation /> */}
     </Flex>
   );
 };

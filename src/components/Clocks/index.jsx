@@ -19,6 +19,7 @@ const Clocks = () => {
   const [argStringDate, argDate] = useRealTime(
     "America/Argentina/Buenos_Aires"
   );
+
   const [spainStringDate, spainDate] = useRealTime("Europe/Madrid");
 
   const lodorosTime = isNight(argDate) || isNight(spainDate) ? "NO" : "SI";
