@@ -4,12 +4,14 @@ import { Route, Switch } from "react-router";
 // Pages
 import Times from "./Pages/Times";
 import Home from "./Pages/Home";
+import Discord from "./Pages/Discord";
 
 const MainRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/times" component={Times} />
+      <Route exact path="/discord" component={Discord} />
     </Switch>
   );
 };

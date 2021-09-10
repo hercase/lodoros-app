@@ -1,6 +1,12 @@
 import React from "react";
 import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/menu";
-import { HamburgerIcon, TimeIcon } from "@chakra-ui/icons";
+import {
+  ArrowRightIcon,
+  ChatIcon,
+  HamburgerIcon,
+  LinkIcon,
+  MoonIcon,
+} from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/button";
 import { Link } from "react-router-dom";
 
@@ -15,11 +21,17 @@ const Navigation = () => {
       />
       <MenuList>
         <Link to="/times">
-          <MenuItem>Lodoros time?</MenuItem>
+          <MenuItem icon={<MoonIcon />}>Lodoros time?</MenuItem>
         </Link>
-        <MenuItem isDisabled>Links Útiles</MenuItem>
-        <MenuItem isDisabled>Videos</MenuItem>
-        <MenuItem isDisabled>Cosas randoms</MenuItem>
+        <Link to="/discord">
+          <MenuItem icon={<ChatIcon />}>Discord (NO BT)</MenuItem>
+        </Link>
+        <MenuItem icon={<LinkIcon />} isDisabled>
+          Links Útiles
+        </MenuItem>
+        <MenuItem icon={<ArrowRightIcon />} isDisabled>
+          Videos
+        </MenuItem>
       </MenuList>
     </Menu>
   );
