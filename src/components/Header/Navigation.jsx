@@ -14,10 +14,12 @@ const Navigation = () => {
         icon={<HamburgerIcon />}
       />
       <MenuList>
-        <MenuItem>
-          <Link to="/times">Lodoros time?</Link>
-        </MenuItem>
-        <MenuItem>Links Útiles</MenuItem>
+        <Link to="/times">
+          <MenuItem>Lodoros time?</MenuItem>
+        </Link>
+        <MenuItem isDisabled>Links Útiles</MenuItem>
+        <MenuItem isDisabled>Videos</MenuItem>
+        <MenuItem isDisabled>Cosas randoms</MenuItem>
       </MenuList>
     </Menu>
   );

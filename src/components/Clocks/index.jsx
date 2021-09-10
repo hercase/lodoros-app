@@ -11,7 +11,7 @@ const Clocks = () => {
   const lodorosTime = isNight(argDate) || isNight(spainDate) ? "NO" : "SI";
 
   return (
-    <VStack>
+    <VStack spacing="2.5rem">
       <Center>
         <HStack spacing="12px">
           <Image
