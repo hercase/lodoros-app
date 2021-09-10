@@ -11,6 +11,9 @@ import {
 } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 
+import ArgFlag from "../../assets/argentina.svg";
+import SpainFlag from "../../assets/spain.svg";
+
 const Clocks = () => {
   const [argStringDate, argDate] = getTimeZoneDate(
     "America/Argentina/Buenos_Aires"
@@ -23,11 +26,7 @@ const Clocks = () => {
       <Center>
         <Stack direction={["column", "column", "row"]} spacing="12px">
           <HStack spacing={2}>
-            <Image
-              boxSize="25px"
-              src={window.location.origin + "/img/argentina.svg"}
-              alt="Bandera Argentina"
-            />
+            <Image boxSize="25px" src={ArgFlag} alt="Bandera Argentina" />
             <Text fontSize={{ base: "0.875rem", md: "1rem" }}>
               {argStringDate}
             </Text>
@@ -35,11 +34,7 @@ const Clocks = () => {
           </HStack>
 
           <HStack spacing={2}>
-            <Image
-              boxSize="25px"
-              src={window.location.origin + "/img/spain.svg"}
-              alt="Bandera Española"
-            />
+            <Image boxSize="25px" src={SpainFlag} alt="Bandera Española" />
             <Text fontSize={{ base: "0.875rem", md: "1rem" }}>
               {spainStringDate}
             </Text>
